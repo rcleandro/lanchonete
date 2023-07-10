@@ -32,90 +32,92 @@ Após o build do projeto a API estará disponível no endereço http://localhost
 
 - POST /produtos (Cadastro de um novo produto)
 
-![Captura de Tela 2023-07-09 às 19.18.08.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_iuRYSk%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.18.08.png)
+![Captura de Tela 2023-07-09 às 21 02 45](https://github.com/rcleandro/lanchonete/assets/60019021/533861cc-d7a4-453d-ace4-9c5996109b03)
 
 
 - GET /produtos (Lista todos os produto)
 
-![Captura de Tela 2023-07-09 às 19.25.23.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_2kbrZs%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.25.23.png)
+![Captura de Tela 2023-07-09 às 21 03 12](https://github.com/rcleandro/lanchonete/assets/60019021/667bd636-7571-4725-b759-7b4febb6fe08)
 
 
 - GET /pedido/id/{id} (Busca pedido por id)
 
-![Captura de Tela 2023-07-09 às 20.05.07.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_mpscYi%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.05.07.png)
+![Captura de Tela 2023-07-09 às 21 03 37](https://github.com/rcleandro/lanchonete/assets/60019021/a8bec5a1-417a-48bd-b72e-0957705d76a2)
 
 
 - GET /produtos/categoria/{categoria} (Lista os produtos por categoria)
 
-![Captura de Tela 2023-07-09 às 19.25.48.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Ow39TX%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.25.48.png)
+![Captura de Tela 2023-07-09 às 21 04 04](https://github.com/rcleandro/lanchonete/assets/60019021/287a5f5d-1d35-429a-9f4c-312158d4dbc2)
 
 
 - PUT /produtos/{id} (Edita o produto por id) 
 
-![Captura de Tela 2023-07-09 às 19.32.19.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_lP40Oy%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.32.19.png)
+![Captura de Tela 2023-07-09 às 21 04 36](https://github.com/rcleandro/lanchonete/assets/60019021/4ff10261-b2ad-4889-bf3f-a88702e31384)
 
 
 - DELETE /produtos/{id} (Exclui produto por id)
 
-![Captura de Tela 2023-07-09 às 19.58.52.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_HQojcr%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.58.52.png)
+![Captura de Tela 2023-07-09 às 21 04 59](https://github.com/rcleandro/lanchonete/assets/60019021/930f9f45-7988-454c-89ec-ae7249a8742f)
 
-
-### Pedidos:
-
-- POST /pedidos (Cadastro de um novo pedido)
-
-![Captura de Tela 2023-07-09 às 19.35.09.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_ux1xHH%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.35.09.png)
-
-
-- GET /pedidos (Lista todos os pedidos)
-
-![Captura de Tela 2023-07-09 às 19.36.17.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Ow2yWr%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.36.17.png)
-
-
-- GET /pedido/id/{id} (Busca pedido por id)
-
-![Captura de Tela 2023-07-09 às 20.05.47.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_khxwAl%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.05.47.png)
-
-
-- PUT /pedidos/{id} (Edita o pedido por id)
-
-![Captura de Tela 2023-07-09 às 19.37.47.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_B3SbCP%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2019.37.47.png)
-
-
-- DELETE /pedidos/{id} (Exclui pedido por id)
-
-![Captura de Tela 2023-07-09 às 20.07.56.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_l2VHnk%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.07.56.png)
 
 
 ### Clientes:
 
 - POST /clientes (Cadastro de um novo cliente)
 
-![Captura de Tela 2023-07-09 às 20.09.47.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_w9KDt8%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.09.47.png)
+![Captura de Tela 2023-07-09 às 21 05 45](https://github.com/rcleandro/lanchonete/assets/60019021/38d7799d-b33e-4d7f-8d6f-059f2ebb8d49)
 
 
 - GET /clientes (Lista todos os clientes)
 
-![Captura de Tela 2023-07-09 às 20.12.40.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_yycKVI%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.12.40.png)
+![Captura de Tela 2023-07-09 às 21 06 37](https://github.com/rcleandro/lanchonete/assets/60019021/89021ef9-518b-4d47-a2d8-a51045754cd8)
 
 
 - GET /clientes/cpf/{cpf} (Busca cliente por cpf)
 
-![Captura de Tela 2023-07-09 às 20.13.23.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_4Bs7VJ%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.13.23.png)
+![Captura de Tela 2023-07-09 às 21 06 53](https://github.com/rcleandro/lanchonete/assets/60019021/bf36dc04-b104-41ee-b83d-6db7d2e025d2)
 
 
 - GET /clientes?nomeCliente={nome} (Busca cliente por nome)
 
-![Captura de Tela 2023-07-09 às 20.12.09.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_QDQKnp%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.12.09.png)
+![Captura de Tela 2023-07-09 às 21 07 13](https://github.com/rcleandro/lanchonete/assets/60019021/46c32e94-ba00-43d1-aa76-d8b2c53d45ef)
 
 
 - PUT /clientes/{cpf} (Edita o cliente por cpf)
 
-![Captura de Tela 2023-07-09 às 20.20.18.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_On2e2X%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.20.18.png)
+![Captura de Tela 2023-07-09 às 21 07 38](https://github.com/rcleandro/lanchonete/assets/60019021/cfbae1dc-5735-4155-89eb-4eb215471f75)
 
 
 - DELETE /clientes/{cpf} (Exclui cliente por cpf)
 
-![Captura de Tela 2023-07-09 às 20.14.12.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fcl%2Fhgy6mrv55znf9wyfgny3j5s00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_KTfycE%2FCaptura%20de%20Tela%202023-07-09%20%C3%A0s%2020.14.12.png)
+![Captura de Tela 2023-07-09 às 21 08 00](https://github.com/rcleandro/lanchonete/assets/60019021/2d17f54e-cbe7-43e3-a36f-10a02da2cb2c)
+
+
+
+### Pedidos:
+
+- POST /pedidos (Cadastro de um novo pedido)
+
+![Captura de Tela 2023-07-09 às 21 10 10](https://github.com/rcleandro/lanchonete/assets/60019021/82434e61-62c1-472a-bea9-2d7513b718f6)
+
+
+- GET /pedidos (Lista todos os pedidos)
+
+![Captura de Tela 2023-07-09 às 21 10 33](https://github.com/rcleandro/lanchonete/assets/60019021/04759652-500d-4366-861a-9c5284061dae)
+
+
+- GET /pedido/id/{id} (Busca pedido por id)
+
+![Captura de Tela 2023-07-09 às 21 10 59](https://github.com/rcleandro/lanchonete/assets/60019021/86e6af34-0829-4bb0-802a-61ba5fc8710d)
+
+
+- PUT /pedidos/{id} (Edita o pedido por id)
+
+![Captura de Tela 2023-07-09 às 21 11 22](https://github.com/rcleandro/lanchonete/assets/60019021/ed2dac44-b5cd-4fcc-b855-8078126fd52f)
+
+
+- DELETE /pedidos/{id} (Exclui pedido por id)
+
+![Captura de Tela 2023-07-09 às 21 11 39](https://github.com/rcleandro/lanchonete/assets/60019021/d99ce853-af81-453c-b000-8871354792a9)
 
 
