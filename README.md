@@ -1,14 +1,6 @@
 # lanchoneteAPI 🍔🥤🍟🍗🌭🥪
 
-API de gerenciamento de pedidos de uma lanchonete, desenvolvida para avaliação da fase 1 da pós-graduação em Arquitetura de Software - FIAP.
-
-A API contém as seguintes funcionalidades:
-- Cadastro de clientes
-- Identificação do cliente (Nome, CPF e E-mail)
-- Gerenciamento de produtos (Criar, editar, remover)
-- Busca de produtos por categoria (Lanche, acompanhamento, bebida e sobremesa)
-- Fake checkout, apenas enviar os produtos escolhidos para a fila
-- Lista de pedidos
+API de gerenciamento de pedidos de uma lanchonete, desenvolvida para avaliação da fase 2 da pós-graduação em Arquitetura de Software - FIAP.
 
 
 ## Desenvolvimento
@@ -111,7 +103,7 @@ Após o build do projeto a API estará disponível no endereço http://localhost
 ![Captura de Tela 2023-07-09 às 21 10 59](https://github.com/rcleandro/lanchonete/assets/60019021/86e6af34-0829-4bb0-802a-61ba5fc8710d)
 
 
-- PUT /pedidos/{id} (Edita o pedido por id)
+- PUT /pedidos (Edita o pedido por id)
 
 ![Captura de Tela 2023-07-09 às 21 11 22](https://github.com/rcleandro/lanchonete/assets/60019021/ed2dac44-b5cd-4fcc-b855-8078126fd52f)
 
@@ -119,5 +111,19 @@ Após o build do projeto a API estará disponível no endereço http://localhost
 - DELETE /pedidos/{id} (Exclui pedido por id)
 
 ![Captura de Tela 2023-07-09 às 21 11 39](https://github.com/rcleandro/lanchonete/assets/60019021/d99ce853-af81-453c-b000-8871354792a9)
+
+
+
+### Checkout:
+
+
+- PUT /checkout (Faz o checkout do pedido)
+
+
+
+### Status do pagamento:
+
+
+- PUT /statusPagamento/{id} (Consulta o status do pagamento por id do pedido)
 
 

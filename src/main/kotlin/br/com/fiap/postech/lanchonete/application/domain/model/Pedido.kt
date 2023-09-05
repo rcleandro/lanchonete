@@ -16,6 +16,8 @@ data class Pedido(
     @ManyToOne
     var bebida: Produto?,
     @Enumerated(value = EnumType.STRING)
-    var progresso: Progresso = Progresso.RECEBIDO,
+    var progresso: Progresso? = null,
+    @Enumerated(value = EnumType.STRING)
+    var statusPagamento: StatusPagamento? = null,
     val data: LocalDateTime = LocalDateTime.now()
 )

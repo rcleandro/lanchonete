@@ -9,6 +9,6 @@ data class PedidoView(
     var lanche: Produto?,
     var acompanhamento: Produto?,
     var bebida: Produto?,
-    val progresso: Progresso,
+    val progresso: Progresso?,
     val data: LocalDateTime
 )

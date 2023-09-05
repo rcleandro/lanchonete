@@ -4,15 +4,14 @@ import br.com.fiap.postech.lanchonete.adapter.outbound.repository.PedidoReposito
 import br.com.fiap.postech.lanchonete.application.domain.dto.AtualizacaoPedidoForm
 import br.com.fiap.postech.lanchonete.application.domain.dto.NovoPedidoForm
 import br.com.fiap.postech.lanchonete.application.domain.dto.PedidoView
-import br.com.fiap.postech.lanchonete.exception.NotFoundException
 import br.com.fiap.postech.lanchonete.application.domain.mapper.PedidoFormMapper
+import br.com.fiap.postech.lanchonete.exception.NotFoundException
 import br.com.fiap.postech.lanchonete.application.domain.mapper.PedidoViewMapper
 import br.com.fiap.postech.lanchonete.application.domain.model.Pedido
 import br.com.fiap.postech.lanchonete.application.domain.model.Progresso
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
-import java.util.stream.Collectors
 
 @Service
 class PedidoService(
@@ -25,11 +24,24 @@ class PedidoService(
     private val notFoundMessage: String = "Pedido não encontrado"
 
     fun listar(pageable: Pageable): Page<PedidoView> {
-        return repository.findAll(pageable).map { p -> pedidoViewMapper.map(p) }
+        val listaDePedidos = repository.findAll(pageable)
+        listaDePedidos
+            .filter { it.progresso != Progresso.FINALIZADO }
+            .sortedWith(progressoComparator.thenBy { it.data })
+        return listaDePedidos.map { p -> pedidoViewMapper.map(p) }
+    }
+
+    val progressoComparator = compareBy<Pedido> {
+        when(it.progresso) {
+            Progresso.PRONTO -> 0
+            Progresso.EM_PREPARACAO -> 1
+            Progresso.RECEBIDO -> 2
+            else -> 3
+        }
     }
 
     fun buscarPorId(id: Long): PedidoView {
-        val pedido = repository.findById(id).orElseThrow{ NotFoundException(notFoundMessage) }
+        val pedido = repository.findById(id).orElseThrow { NotFoundException(notFoundMessage) }
         return pedidoViewMapper.map(pedido)
     }
 
@@ -45,7 +57,7 @@ class PedidoService(
     }
 
     fun atualizar(form: AtualizacaoPedidoForm): PedidoView {
-        val pedido = repository.findById(form.id).orElseThrow{ NotFoundException(notFoundMessage) }
+        val pedido = repository.findById(form.id).orElseThrow { NotFoundException(notFoundMessage) }
         pedido.lanche = form.lanche?.let { produtoService.buscarProdutoPorId(it) } ?: pedido.lanche
         pedido.acompanhamento = form.acompanhamento?.let { produtoService.buscarProdutoPorId(it) } ?: pedido.acompanhamento
         pedido.bebida = form.bebida?.let { produtoService.buscarProdutoPorId(it) } ?: pedido.bebida
