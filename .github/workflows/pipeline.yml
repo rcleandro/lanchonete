@@ -7,12 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: always
-          ACTIONS_RUNTIME_NODE12: 1
 
       - name: Package
         run: mvn package
