@@ -10,6 +10,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: always
+          ACTIONS_RUNTIME_NODE12: 1
 
       - name: Package
         run: mvn package
