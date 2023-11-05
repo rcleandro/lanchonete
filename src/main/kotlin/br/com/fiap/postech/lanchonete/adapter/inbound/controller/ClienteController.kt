@@ -55,4 +55,14 @@ class ClienteController(private val service: ClienteService) {
     fun deletar(@PathVariable cpf: String) {
         service.deletar(cpf)
     }
+
+    @GetMapping("/signup/{cpf}")
+    fun signupPorCpf(@PathVariable cpf: String): String {
+        return service.signupPorCpf(cpf)
+    }
+
+    @GetMapping("/login/{cpf}")
+    fun loginPorCpf(@PathVariable cpf: String): String {
+        return service.loginPorCpf(cpf)
+    }
 }
