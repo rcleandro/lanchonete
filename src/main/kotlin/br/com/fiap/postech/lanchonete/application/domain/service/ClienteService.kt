@@ -63,6 +63,6 @@ class ClienteService(
     }
 
     fun loginPorCpf(username: String): String {
-        return "$url/signup?client_id=$clientId&response_type=$responseType&scope=$scope&redirect_uri=$redirectUri&username=$username"
+        return "$url/login?client_id=$clientId&response_type=$responseType&scope=$scope&redirect_uri=$redirectUri&username=$username"
     }
 }
