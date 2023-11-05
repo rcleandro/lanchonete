@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: stg
-    needs: build
+    needs: publish
     
     if: github.ref == 'refs/heads/develop'
     steps:
@@ -66,7 +66,7 @@ jobs:
     if: github.ref == 'refs/heads/release'
     environment:
       name: pre
-    needs: build
+    needs: publish
 
     steps:
       - name: Deploy 
@@ -80,7 +80,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     environment:
       name: prod
-    needs: build
+    needs: publish
 
     steps:
       - name: Deploy 
