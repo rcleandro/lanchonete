@@ -27,7 +27,6 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-          package: '*.jar'
           
       - name: Check Java version
         run: java -version
