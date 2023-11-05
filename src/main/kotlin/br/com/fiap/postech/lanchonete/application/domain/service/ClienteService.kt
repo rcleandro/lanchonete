@@ -11,7 +11,6 @@ import br.com.fiap.postech.lanchonete.exception.NotFoundException
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
-import java.util.stream.Collectors
 
 @Service
 class ClienteService(
@@ -21,6 +20,11 @@ class ClienteService(
 ) {
 
     private val notFoundMessage: String = "Cliente não encontrado"
+    private val url: String = "https://usuarioslanchonete.auth.us-east-1.amazoncognito.com"
+    private val responseType: String = "code"
+    private val scope: String = "email+openid+phone"
+    private val clientId: String = "43nb6qqpo24q5k5cv3u0j6k7sh"
+    private val redirectUri: String = "https%3A%2F%2Fexemplo.com"
 
     fun listar(
         nomeCliente: String?,
@@ -52,5 +56,13 @@ class ClienteService(
 
     fun deletar(cpf: String) {
         repository.deleteById(cpf)
+    }
+
+    fun signupPorCpf(username: String): String {
+        return "$url/signup?client_id=$clientId&response_type=$responseType&scope=$scope&redirect_uri=$redirectUri&username=$username"
+    }
+
+    fun loginPorCpf(username: String): String {
+        return "$url/signup?client_id=$clientId&response_type=$responseType&scope=$scope&redirect_uri=$redirectUri&username=$username"
     }
 }
