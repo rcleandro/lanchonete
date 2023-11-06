@@ -6,6 +6,6 @@ import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface ProdutoRepository:JpaRepository<Produto, Long> {
+interface ProdutoRepository: JpaRepository<Produto, Long> {
     fun findByCategoria(categoria: Categoria, pageable: Pageable): Page<Produto>
 }

@@ -1,11 +1,13 @@
 # lanchoneteAPI 🍔🥤🍟🍗🌭🥪
 
-API de gerenciamento de pedidos de uma lanchonete, desenvolvida para avaliação da fase 2 da pós-graduação em Arquitetura de Software - FIAP.
+API de gerenciamento de pedidos de uma lanchonete, desenvolvida para avaliação da fase 3 da pós-graduação em Arquitetura de Software - FIAP.
 
 
 ## Desenvolvimento
 
-API desenvolvida em Kotlin utilizando Springboot e H2 database.
+API desenvolvida em Kotlin utilizando Springboot e MySQL.
+
+A escolha de migrar para o MySQL como banco de dados é justificada pelo seu amplo suporte, desempenho robusto, capacidade de escalabilidade e integração com a maioria das aplicações web, tornando-o uma opção confiável para atender às necessidades do nosso modelo de modelagem de dados.
 
 
 ## Build
@@ -125,5 +127,19 @@ Após o build do projeto a API estará disponível no endereço http://localhost
 
 
 - PUT /statusPagamento/{id} (Consulta o status do pagamento por id do pedido)
+
+
+
+### Signup:
+
+
+- GET /signup/{cpf} (Direciona para o site para fazer o cadastro de Usuário e senha)
+
+
+
+### Login:
+
+
+- GET /login/{cpf} (Direciona para o site para fazer o Login de Usuário)
 
 
