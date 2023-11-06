@@ -20,8 +20,8 @@ ENV MYSQL_HOST=postech
 ENV MYSQL_ROOT_PASSWORD=postech
 ENV MYSQL_PORT=3306
 ENV MYSQL_DATABASE=lanchonete
-ENV MYSQL_USER=sa
-ENV MYSQL_PASSWORD=postech
+ENV MYSQL_USER=admin
+ENV MYSQL_PASSWORD=lanchonete
 
 ADD /target/lanchonete-0.0.1-SNAPSHOT.jar lanchonete.jar
 
