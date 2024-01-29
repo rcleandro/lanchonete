@@ -1,6 +1,6 @@
 # lanchoneteAPI 🍔🥤🍟🍗🌭🥪
 
-API de gerenciamento de pedidos de uma lanchonete, desenvolvida para avaliação da fase 3 da pós-graduação em Arquitetura de Software - FIAP.
+API de gerenciamento de pedidos de uma lanchonete, desenvolvida para avaliação da fase 4 da pós-graduação em Arquitetura de Software - FIAP.
 
 
 ## Desenvolvimento

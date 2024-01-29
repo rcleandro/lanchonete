@@ -1,6 +1,6 @@
 package br.com.fiap.postech.lanchonete.exception
 
-import br.com.fiap.postech.lanchonete.application.domain.dto.ErrorView
+import br.com.fiap.postech.lanchonete.dto.ErrorView
 import jakarta.servlet.http.HttpServletRequest
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.MethodArgumentNotValidException
