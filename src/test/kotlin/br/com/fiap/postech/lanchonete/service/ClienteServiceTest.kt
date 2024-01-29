@@ -7,7 +7,6 @@ import br.com.fiap.postech.lanchonete.dto.NovoClienteForm
 import br.com.fiap.postech.lanchonete.mapper.ClienteFormMapper
 import br.com.fiap.postech.lanchonete.mapper.ClienteViewMapper
 import br.com.fiap.postech.lanchonete.model.Cliente
-import br.com.fiap.postech.lanchonete.service.ClienteServiceImpl
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach

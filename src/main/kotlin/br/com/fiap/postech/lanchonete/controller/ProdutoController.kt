@@ -34,7 +34,7 @@ class ProdutoController(private val service: ProdutoServiceImpl) {
         @PathVariable categoria: Int,
         @PageableDefault(size = 50, sort = ["nome"]) pageable: Pageable
     ): Page<ProdutoView> {
-        return service.buscarPorCategoria(Categoria.values()[categoria], pageable)
+        return service.buscarPorCategoria(Categoria.entries[categoria], pageable)
     }
 
     @PostMapping

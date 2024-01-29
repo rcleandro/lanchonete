@@ -12,7 +12,7 @@ class ProdutoFormMapper: Mapper<NovoProdutoForm, Produto> {
             nome = p.nome,
             descricao = p.descricao,
             preco = p.preco,
-            categoria = Categoria.values()[p.categoria]
+            categoria = Categoria.entries[p.categoria]
         )
     }
 }
