@@ -1,7 +1,6 @@
-create table cliente
-(
-    cpf   varchar(11) not null,
-    nome  varchar(50) not null,
-    email varchar(50) not null,
-    primary key (cpf)
+CREATE TABLE cliente (
+    cpf varchar(11) NOT NULL,
+    nome varchar(50) NOT NULL,
+    email varchar(50) NOT NULL,
+    PRIMARY KEY (cpf)
 );

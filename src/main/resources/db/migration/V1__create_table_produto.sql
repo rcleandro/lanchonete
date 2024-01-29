@@ -1,9 +1,8 @@
-create table produto
-(
-    id        bigint       not null auto_increment,
-    nome      varchar(50)  not null,
-    descricao varchar(300) not null,
-    preco     double       not null,
-    categoria varchar(20)  not null,
-    primary key (id)
+CREATE TABLE produto (
+    id bigint NOT NULL AUTO_INCREMENT,
+    nome varchar(50) NOT NULL,
+    descricao varchar(100) NOT NULL,
+    preco double NOT NULL,
+    categoria varchar(20) NOT NULL,
+    PRIMARY KEY (id)
 );
